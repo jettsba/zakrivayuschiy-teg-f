@@ -1,20 +1,24 @@
 :root {
-    --main-font: "Inter";
-    --accent-font: "PressStart2P";
-    --main-weight: 410;
-    --title-weight: 715;
+  --main-font: "Inter";
+  --accent-font: "PressStart2P";
+  --main-weight: 410;
+  --title-weight: 715;
 
-    --accent-color: #000;
-    --text-color: #fff;
-    --bg-color: #fff;
-    --background-gradient: 
-                        repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
-                        repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
-                        linear-gradient(to bottom, #e7e7e7 0% 0.01%, #1a1a1a);
+  --accent-color: #000;
+  --text-color: #fff;
+  --bg-color: #fff;
+  --background-gradient:
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0% 0.01%, #1a1a1a);
 
-    --card-width: clamp(375px, 260.56px + 30.52vw, 700px);
-    --textlogo-size: clamp(49px, 43.37px + 1.50vw, 65px);
-    --heading-size: clamp(14px, 10.83px + 0.85vw, 23px);
-    --save-button-width: clamp(306px, 295.79px + 2.72vw, 335px);
-    --save-card-width: clamp(341px, 336.77px + 1.13vw, 353px);
+  --card-width: clamp(375px, 260.56px + 30.52vw, 700px);
+  --textlogo-size: clamp(49px, 43.37px + 1.5vw, 65px);
+  --heading-size: clamp(14px, 10.83px + 0.85vw, 23px);
+  --save-button-width: clamp(306px, 295.79px + 2.72vw, 335px);
+  --save-card-width: clamp(341px, 336.77px + 1.13vw, 353px);
+
+  --anim-heart__contour: #000;
+  --anim-heart__fill: #ff0000;
+  --anim-heart__core: #fff;
 }
