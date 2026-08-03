@@ -4,6 +4,9 @@
     --main-weight: 410;
     --title-weight: 715;
 
+    --accent-color: #000;
+    --text-color: #fff;
+    --bg-color: #fff;
     --background-gradient: 
                         repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
                         repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
