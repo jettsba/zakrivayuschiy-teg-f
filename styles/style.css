@@ -10,7 +10,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  
+
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--text-weight);
 
@@ -24,10 +24,12 @@
   padding: 100px 0;
 }
 
+/* Резиновая ширина карточек */
 .flexible {
   inline-size: var(--card-width);
 }
 
+/* Хедер-секция */
 .header {
   display: flex;
   flex-direction: column;
@@ -49,6 +51,7 @@
   font-size: var(--heading-size);
 }
 
+/* Карточки */
 .card {
   display: flex;
   flex-direction: column;
@@ -79,7 +82,33 @@
   display: block;
   width: 100%;
 }
-  
+
+/* Фильтры изображений */
+.card__image.ready {
+  filter: sepia(0.3) brightness(1.05) saturate(1.15);
+}
+.card__image.fresh-start {
+  filter: brightness(1.1) contrast(1.15);
+}
+.card__image.momentum {
+  filter: saturate(1.2) contrast(1.1);
+}
+.card__image.self-doubt {
+  filter: grayscale(0.25) contrast(1.3);
+}
+.card__image.not-alone {
+  filter: hue-rotate(-12deg) saturate(1.2);
+}
+.card__image.keep-going {
+  filter: contrast(1.05) saturate(1.1) brightness(1.05);
+}
+.card__image.still-here {
+  filter: blur(0.4px) brightness(0.9) contrast(1.2);
+}
+.card__image.worth-it {
+  filter: brightness(1.08) contrast(1.1) saturate(1.4);
+}
+
 .card__image-wrapper {
   position: relative;
 }
@@ -98,7 +127,7 @@
     -1px 0 #fff,
     1px 0 #fff,
     0 -1px #fff,
-    0  1px #fff;
+    0 1px #fff;
 }
 
 @supports (-webkit-text-stroke: 1px #fff) {
@@ -115,6 +144,20 @@
   gap: 25px;
 }
 
+/* Стилизация текста с личными впечатлениями */
+.card__text-impressions {
+  font-style: italic;
+}
+
+.card__text-impressions:before {
+  content: "/*";
+}
+
+.card__text-impressions:after {
+  content: "*/";
+}
+
+/* Кнопки карточки */
 .card__buttons {
   display: flex;
   align-items: center;
@@ -125,7 +168,7 @@
 .button__text {
   font-family: var(--accent-font), fantasy;
   font-size: 0.78rem;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .card__icon-button {
@@ -147,6 +190,7 @@
   background-color: transparent;
 }
 
+/* Кнопка сохранения */
 .save-button {
   inline-size: var(--save-button-width);
   justify-self: center;
@@ -166,14 +210,15 @@
   flex-shrink: 0;
 }
 
+/* Адаптация для мобильных устройств */
 @media (width <= 768px) {
-    .save-button {
-        flex-direction: column;
-        padding: 15px 20px;
-    }
+  .save-button {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
 
-    .save-icon {
-        inline-size: 28px;
-        block-size: 28px;
-    }
+  .save-icon {
+    inline-size: 28px;
+    block-size: 28px;
+  }
 }
