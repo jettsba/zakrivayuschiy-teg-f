@@ -198,10 +198,11 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 20px;
+  padding: 15px;
 
   background-color: #fff;
   border: 2px solid #000;
+  line-height: 0.9;
 }
 
 .save-icon {
@@ -210,8 +211,57 @@
   flex-shrink: 0;
 }
 
+/* Модальное окно */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.save-card {
+  display: none;
+  inline-size: var(--save-card-width);
+
+  padding: 30px;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+.save-card[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.save-card__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.save-card__content .save-icon {
+  width: 39px;
+  height: 39px;
+}
+
+.save-dialog__text {
+  font-family: var(--accent-font), fantasy;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  text-align: start;
+  line-height: 1.5;
+}
+
+.save-dialog__close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
 /* Адаптация для мобильных устройств */
-@media (width <= 768px) {
+@media (width <= 375px) {
   .save-button {
     flex-direction: column;
     padding: 15px 20px;
