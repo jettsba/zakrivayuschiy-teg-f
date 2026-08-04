@@ -208,7 +208,6 @@ a:hover::after {
   inline-size: 130px;
   align-self: flex-end;
   padding: 8px 0;
-  background-color: transparent;
 }
 
 /* Кнопка сохранения */
@@ -353,39 +352,39 @@ dialog::backdrop {
 
 /* Анимация hover состояния */
 .like-icon:hover .core {
-  fill: var(--anim-heart__contour);
+  fill: var(--anim-heart-contour);
   transition-delay: 0s;
 }
 
 .like-icon:hover .main-body {
-  fill: var(--anim-heart__contour);
+  fill: var(--anim-heart-contour);
   transition-delay: 0.05s;
 }
 
 /* Анимация active состояния */
 .like-icon:active .core {
-  fill: var(--anim-heart__fill);
+  fill: var(--anim-heart-fill);
   transition-delay: 0s;
 }
 
 .like-icon:active .main-body {
-  fill: var(--anim-heart__fill);
+  fill: var(--anim-heart-fill);
   transition-delay: 0.05s;
 }
 
 /* Анимация click состояния */
 .like-icon.is-liked .core {
-  fill: var(--anim-heart__fill);
+  fill: var(--anim-heart-fill);
   transition-delay: 0s;
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--anim-heart__fill);
+  fill: var(--anim-heart-fill);
   transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--anim-heart__fill);
+  fill: var(--anim-heart-fill);
   transition-duration: 0.3s;
   transition-delay: 0.06s;
 }

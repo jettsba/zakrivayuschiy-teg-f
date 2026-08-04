@@ -15,7 +15,7 @@
     fill: transparent;
   }
   50% {
-    fill: var(--anim-heart__fill);
+    fill: var(--anim-heart-fill);
   }
   100% {
     fill: transparent;
